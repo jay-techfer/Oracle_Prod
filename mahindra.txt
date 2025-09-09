@@ -1,0 +1,141 @@
+How many vehicle has attended by service advisor 
+reframed question(How many total vehicle has attended by each service advisor )
+
+How much time Service Advisor took to deliver the vehicle along with SA_EMPLY_CD
+rf(How much time each Service Advisor took to deliver the vehicle after the ro has been created)
+rf(give me vehicle number wise delivery time in days once the ro has been created)
+
+Which Technician has attended reg number MH14LP7888 vehicle. 
+MH14JM4383
+MH12UC7659
+MH14KB6856
+MH48BK8811
+
+Which was the pickup location for MH47AG8538
+MH47BZ3412
+MH02BM6378
+MH47BZ1571
+UP14GN5530
+
+How much discount in part & labour was given in MH47AG8538
+KA03NE7738
+UP16EB8849
+UP16CZ3413
+MH47BB4239
+DL7CW0514
+MH14HQ3624
+rf(How much of discount for part & labour was given for vehicle number DL7CW0514)
+
+How many unique vehicles have visited the workshop?
+
+
+What are the top 5 most frequent vehicle registration numbers?
+
+How many repeat repair visits happened this year?
+
+Which vehicle had the most repeat repairs?
+
+Which technician handled the most repair orders?
+
+What is the average repair time per technician?
+
+
+How much time did the Service Advisor take to deliver each vehicle?
+Which jobs took more than 2 days to complete?
+rf( How much time did the Service Advisor take to deliver each vehicle along with the Service Advisor ID ? Which jobs took more than 2 days to complete?)
+   4
+
+How many same-day deliveries were missed?
+
+Which jobs had customer approval delays and why?
+
+--------------------------------------------------------------------------------------
+Provide the list of Top 5 consumed part under Paid Service from 21-01-2025 to 21-02-2025 [mahindra].[dbo].[parts]
+(Running repair not there)
+
+List the Top 5 Dealers with highest part Consumption under Paid Service from 21-01-2025 to 21-02-2025 [mahindra].[dbo].[parts]
+
+List the Top Zone WEST ZONE & Area Office MUMBAI Mahindra.dbo.parts
+
+List the Top 2 SCORPIO-N & Scorpio-N Diesel MT with highest part from Mahindra.dbo.parts
+
+Top 10 Part which has been replaced in SCORPIO-N & Scorpio-N Diesel MT
+
+List the Top 03 SCORPIO-N & Scorpio-N Diesel MT with highest part consumption
+
+Give the list of most frequently replaced parts for XUV300 and XUV300 Gasoline MT BS6, in WEST ZONE, MUMBAI area, CHANDIVALI - POWAI _WS location. Show both quantity and value from mahindra.dbo.parts table only 
+
+--------------------------------------------------------------------------------------------
+Provide the list of Top 5 consumed Labour under Paid Service from 21-01-2025 to 21-02-2025 
+
+List the Top 6 Dealers with highest Labour Consumption under Paid Service from 21-01-2025 to 21-02-2025 .
+
+List the Top 2 (SCORPIO-N & Scorpio-N Diesel MT with highest Labour consumption.
+
+Top 10 Labour which has been replaced in SCORPIO-N & Scorpio-N Diesel MT
+
+Give the list of most frequently replaced labour for XUV300 and XUV300 Gasoline MT BS6, in WEST ZONE, MUMBAI area, at RANDHAWA MOTORS (A DIV OF RANDHAWA AUTOMOBILE ENGINEERING PVT LTD), CHANDIVALI - POWAI _WS location. Show both quantity and value from 
+  
+----------------------------------------------------------------------------------------------------------------------
+
+Give the Word Cloud for the for THAR, in EAST ZONE, MUMBAI area,  for the period 21-01-2024 to 21-02-2024 and from verbatim table
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+Aggregated Counts for MODEL_GROP, FAMILY, DEALER, LOCATION, OFFICE, ZONE
+
+give me Top 5 Repeating VoC / Part / Labour Descriptions
+
+
+
+
+
+-------------------------
+Extra 
+
+What are the top most frequently billed items in the parts dataset during a specific period 2025?
+
+Which combinations of model and item appear most frequently in parts billing?
+
+What are the total quantities and amounts billed for each item type?
+
+Which dealers have billed the highest number of part items?
+
+Which zones billed the most for parts overall?
+
+
+Which labour descriptions occur most often across all service records?
+
+What are the total billed amounts per labour type for each zone?
+
+Which combinations of model and labour code are most common?
+
+How many services involved dealer-billed labour?
+
+How many distinct technicians handled services per area office?
+
+
+What are the most frequent customer concerns reported?
+
+How many verbatim records exist per dealer zone?
+
+How many feedback entries mention engine, brakes, or filters?
+
+
+For each model group, what is the combined count of part, labour, and feedback records full join?
+
+How many feedback entries did not result in either part or labour billing?
+
+
+Which dealer groups have the most services overall?
+
+
+What’s the trend in total billed amount per zone over the past 6 months?
+
+give me the feedback which contain oil leakage an its ro id
+
+-----charts----
+give me zone names along with its parts co
+
+23500 10 pe
