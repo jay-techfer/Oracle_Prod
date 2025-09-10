@@ -12,9 +12,9 @@ import json
 from datetime import datetime
 
 
-ORACLE_DSN = "localhost:1521/ORCLPDB"   # ✅ Change if needed
-ORACLE_USER = "jay_user"
-ORACLE_PASS = "oci123456"
+ORACLE_DSN = "localhost:1521/XEPDB1"   # ✅ Use XE PDB service name inside container
+ORACLE_USER = "system"                 # or the user you created
+ORACLE_PASS = "oci@123456"             # your Oracle XE password
 
 
 def get_public_ip():
@@ -118,11 +118,11 @@ def login():
         subprocess.Popen([
             'streamlit', 'run', 'Back_test_oracle.py',
             "--server.port", "8501",
-            "--server.address", "0.0.0.0",   # ✅ allows external access
+            "--server.address", "0.0.0.0",   # ✅ external access
             "--server.headless", "true"
         ])
 
-        return redirect(f"http://127.0.0.1:8501")
+        return redirect(f"http://{public_ip}:8501")
     else:
         flash("Invalid credentials ❌")
         return redirect('/')
@@ -134,9 +134,9 @@ def login():
 if __name__ == '__main__':
     def open_browser():
         time.sleep(1)
-        webbrowser.open("http://127.0.0.1:5000")
-        print("DataGenie Running on http://127.0.0.1:5000")
+        print(f"DataGenie Running on http://{public_ip}:5000")
 
     threading.Thread(target=open_browser).start()
     print("Flask Server Is Starting...")
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)
+
