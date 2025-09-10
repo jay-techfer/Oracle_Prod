@@ -110,12 +110,20 @@ local_ip = socket.gethostbyname(hostname)
 #         "password": "abcd123456"
 #     }
 # ]
+# oracle_servers = [
+#     {
+#         "name": "OracleDB1",
+#         "dsn": "localhost:1521/?service_name=ORCLPDB",  # ✅ correct for service_name
+#         "username": "jay_user",
+#         "password": "oci123456"
+#     },
+# ]
 oracle_servers = [
     {
-        "name": "OracleDB1",
-        "dsn": "localhost:1521/?service_name=ORCLPDB",  # ✅ correct for service_name
-        "username": "jay_user",
-        "password": "oci123456"
+        "name": "OracleXE",
+        "dsn": "localhost:1521/?service_name=XEPDB1",  # ✅ XE default PDB
+        "username": "system",                          # or your custom user
+        "password": "oci@123456"                       # the password you set
     },
 ]
 
@@ -151,15 +159,6 @@ oracle_schema_df = pd.DataFrame()
 #             st.warning(f"SSMS Error: {e}")
 #     return pd.concat(data, ignore_index=True) if data else pd.DataFrame()
 
-
-# oracle_servers = [
-#     {
-#         "name": "OracleDB1",
-#         "dsn": "localhost:1521/ORCLPDB",  # ✅ simplified DSN
-#         "username": "jay_user",
-#         "password": "oci123456"
-#     },
-# ]
 
 
 @st.cache_data(show_spinner=False)
