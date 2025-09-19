@@ -1,0 +1,23 @@
+nohup: ignoring input
+Public IP: 140.245.28.247
+Oracle cursor connected ✅
+Flask Server Is Starting...
+ * Serving Flask app 'testlogin'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.0.228:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 432-139-712
+114.143.146.190 - - [17/Sep/2025 09:02:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+114.143.146.190 - - [17/Sep/2025 09:02:24] "GET / HTTP/1.1" 200 -
+114.143.146.190 - - [17/Sep/2025 09:02:24] "[36mGET /static/style2.css HTTP/1.1[0m" 304 -
+114.143.146.190 - - [17/Sep/2025 09:02:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+Usage: streamlit run [OPTIONS] TARGET [ARGS]...
+Try 'streamlit run --help' for help.
+
+Error: Invalid value: File does not exist: Back_test_mahindra.py
+DataGenie Running on http://140.245.28.247:5001

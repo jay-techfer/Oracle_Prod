@@ -116,13 +116,13 @@ def login():
 
         # Run your Streamlit app after login
         subprocess.Popen([
-            'streamlit', 'run', 'Back_test_oracle.py',
-            "--server.port", "8501",
+            'streamlit', 'run', 'Back_test_mahindra.py',
+            "--server.port", "8502",
             "--server.address", "0.0.0.0",   # ✅ external access
             "--server.headless", "true"
         ])
 
-        return redirect(f"http://{public_ip}:8501")
+        return redirect(f"http://{public_ip}:8502")
     else:
         flash("Invalid credentials ❌")
         return redirect('/')
@@ -134,10 +134,10 @@ def login():
 if __name__ == '__main__':
     def open_browser():
         time.sleep(1)
-        webbrowser.open(f"http://{public_ip}:5000")
-        print(f"DataGenie Running on http://{public_ip}:5000")
+        webbrowser.open(f"http://{public_ip}:5001")
+        print(f"DataGenie Running on http://{public_ip}:5001")
 
     threading.Thread(target=open_browser).start()
     print("Flask Server Is Starting...")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5001)
 

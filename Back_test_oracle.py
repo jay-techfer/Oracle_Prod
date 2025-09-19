@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import urllib
-import pyodbc
 import re
 from sqlalchemy import create_engine
 import google.generativeai as genai
@@ -121,9 +119,9 @@ local_ip = socket.gethostbyname(hostname)
 oracle_servers = [
     {
         "name": "OracleXE",
-        "dsn": "localhost:1521/?service_name=XEPDB1",  # ✅ XE default PDB
-        "username": "system",                          # or your custom user
-        "password": "oci@123456"                       # the password you set
+        "dsn": "127.0.0.1:1521/XE",  # ✅ XE default PDB
+        "username": "jay_user",                          # or your custom user
+        "password": "oci"                       # the password you set
     },
 ]
 
@@ -516,7 +514,7 @@ if user_input:
                 f"oracle+oracledb://{server_cfg['username']}:{server_cfg['password']}@{server_cfg['dsn']}"
             )
             df = pd.read_sql(query, engine)
-
+            print("fetched data" ,df.head(10))
             st.session_state.query_result_df = df
             st.success("✅ Data fetched and ready to analyze")
         else:
