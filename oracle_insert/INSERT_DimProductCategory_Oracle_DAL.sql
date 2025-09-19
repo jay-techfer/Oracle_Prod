@@ -1,9 +1,3 @@
-TRUNCATE TABLE DimProductCategory;
-
-INSERT INTO DimProductCategory(ProductCategoryKey, ProductCategoryAlternateKey, EnglishProductCategoryName, SpanishProductCategoryName, FrenchProductCategoryName)
-SELECT 1, 1, N'Bikes', N'Bicicleta', N'Vélo' FROM DUAL UNION ALL
-SELECT 2, 2, N'Components', N'Componente', N'Composant' FROM DUAL UNION ALL
-SELECT 3, 3, N'Clothing', N'Prenda', N'Vêtements' FROM DUAL UNION ALL
-SELECT 4, 4, N'Accessories', N'Accesorio', N'Accessoire' FROM DUAL;
-
-COMMIT;
+version https://git-lfs.github.com/spec/v1
+oid sha256:a22456a5271f50481c370eba2bc3b92ae32198423adc7cdce4f06f43e3100a9c
+size 496
