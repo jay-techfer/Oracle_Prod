@@ -29,10 +29,10 @@ st.set_page_config("DataGenie", layout="wide",
 
 oracle_servers = [
     {
-        "name": "OracleDB1",
-        "dsn": "localhost:1521/ORCLPDB",  # ✅ correct for service_name
-        "username": "jay_user",
-        "password": "oci123456"
+        "name": "OracleXE",
+        "dsn": "127.0.0.1:1521/XE",  # ✅ XE default PDB
+        "username": "jay_user",                          # or your custom user
+        "password": "oci"                       # the password you set
     },
 ]
 
@@ -779,3 +779,4 @@ elif st.session_state["page"] == "landing":
         st.rerun()
     else:
         landing_page()  # ✅ call landing page here
+
