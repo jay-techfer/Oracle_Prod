@@ -51,7 +51,7 @@ def get_oracle_connection():
 def get_oracle_engine():
     server_cfg = oracle_servers[0]
     # Properly build DSN with service_name
-    dsn = oracledb.makedsn("127.0.0.1", 1521, service_name="ORCLPDB")
+    dsn = oracledb.makedsn("127.0.0.1", 1521, service_name="XE")
     engine = create_engine(
         f"""oracle+oracledb://{server_cfg['username']}:{server_cfg['password']}@{dsn}"""
     )
@@ -779,4 +779,5 @@ elif st.session_state["page"] == "landing":
         st.rerun()
     else:
         landing_page()  # ✅ call landing page here
+
 
